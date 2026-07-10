@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2270 790" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif">
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa0a6"/></marker></defs>
+<rect x="0" y="0" width="2270" height="790" fill="#ffffff"/>
+<text x="1135.0" y="72" text-anchor="middle" font-size="46" font-weight="800" fill="#1f2a3a">Custom CNN Architecture</text>
+<rect x="55" y="130" width="2160" height="500" rx="26" fill="#f0f0f0"/>
+
+<text x="150" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Input Layer</text>
+<rect x="110.0" y="250" width="80" height="330" rx="10" fill="#cfe0fb" stroke="#3b82f6" stroke-width="3"/>
+<circle cx="150" cy="305.0" r="7" fill="#2563eb"/>
+<circle cx="150" cy="360.0" r="7" fill="#2563eb"/>
+<circle cx="150" cy="415.0" r="7" fill="#2563eb"/>
+<circle cx="150" cy="470.0" r="7" fill="#2563eb"/>
+<circle cx="150" cy="525.0" r="7" fill="#2563eb"/>
+<text x="150" y="620" text-anchor="middle" font-size="24" fill="#6b7280">F x 1</text>
+<path d="M195,415.0 L315,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="360" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Conv1D(64)</text>
+<rect x="320.0" y="250" width="80" height="330" rx="10" fill="#fde4bb" stroke="#f0a020" stroke-width="3"/>
+<circle cx="360" cy="305.0" r="7" fill="#e8900f"/>
+<circle cx="360" cy="360.0" r="7" fill="#e8900f"/>
+<circle cx="360" cy="415.0" r="7" fill="#e8900f"/>
+<circle cx="360" cy="470.0" r="7" fill="#e8900f"/>
+<circle cx="360" cy="525.0" r="7" fill="#e8900f"/>
+<text x="360" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU, k=3</text>
+<path d="M405,415.0 L490,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="500.0" y="260.0" width="150" height="90" rx="12" fill="#eeddfd" stroke="#a855f7" stroke-width="3"/>
+<text x="575" y="313.4" text-anchor="middle" font-size="24" font-weight="700" fill="#8b3ce0">LayerNorm</text>
+<rect x="500.0" y="390.0" width="150" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="575" y="443.1" text-anchor="middle" font-size="23" font-weight="700" fill="#dc2626">Dropout (0.3)</text>
+<path d="M660,415.0 L755,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="800" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Conv1D(128)</text>
+<rect x="760.0" y="250" width="80" height="330" rx="10" fill="#c9efcf" stroke="#22b455" stroke-width="3"/>
+<circle cx="800" cy="291.2" r="7" fill="#16a34a"/>
+<circle cx="800" cy="332.5" r="7" fill="#16a34a"/>
+<circle cx="800" cy="373.8" r="7" fill="#16a34a"/>
+<circle cx="800" cy="415.0" r="7" fill="#16a34a"/>
+<circle cx="800" cy="456.2" r="7" fill="#16a34a"/>
+<circle cx="800" cy="497.5" r="7" fill="#16a34a"/>
+<circle cx="800" cy="538.8" r="7" fill="#16a34a"/>
+<text x="800" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU, k=3</text>
+<path d="M845,415.0 L930,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="940.0" y="260.0" width="150" height="90" rx="12" fill="#eeddfd" stroke="#a855f7" stroke-width="3"/>
+<text x="1015" y="313.4" text-anchor="middle" font-size="24" font-weight="700" fill="#8b3ce0">LayerNorm</text>
+<rect x="940.0" y="390.0" width="150" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="1015" y="443.1" text-anchor="middle" font-size="23" font-weight="700" fill="#dc2626">Dropout (0.3)</text>
+<path d="M1100,415.0 L1185,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="1230" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Conv1D(64)</text>
+<rect x="1190.0" y="250" width="80" height="330" rx="10" fill="#fbd6e4" stroke="#ec4899" stroke-width="3"/>
+<circle cx="1230" cy="305.0" r="7" fill="#db2777"/>
+<circle cx="1230" cy="360.0" r="7" fill="#db2777"/>
+<circle cx="1230" cy="415.0" r="7" fill="#db2777"/>
+<circle cx="1230" cy="470.0" r="7" fill="#db2777"/>
+<circle cx="1230" cy="525.0" r="7" fill="#db2777"/>
+<text x="1230" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU, k=3</text>
+<path d="M1275,415.0 L1355,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="1360.0" y="370.0" width="120" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="1420" y="408.7" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">Dropout</text>
+<text x="1420" y="436.7" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">(0.2)</text>
+<path d="M1482,415.0 L1520,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="1520.0" y="370.0" width="120" height="90" rx="12" fill="#c5f0e8" stroke="#14b8a6" stroke-width="3"/>
+<text x="1580" y="408.7" text-anchor="middle" font-size="22" font-weight="700" fill="#0d9488">Global</text>
+<text x="1580" y="436.7" text-anchor="middle" font-size="22" font-weight="700" fill="#0d9488">AvgPool</text>
+<path d="M1640,415.0 L1715,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="1760" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Dense(64)</text>
+<rect x="1720.0" y="250" width="80" height="330" rx="10" fill="#fde4bb" stroke="#f0a020" stroke-width="3"/>
+<circle cx="1760" cy="332.5" r="7" fill="#e8900f"/>
+<circle cx="1760" cy="415.0" r="7" fill="#e8900f"/>
+<circle cx="1760" cy="497.5" r="7" fill="#e8900f"/>
+<text x="1760" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU</text>
+<path d="M1805,415.0 L1885,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="1890.0" y="370.0" width="120" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="1950" y="408.7" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">Dropout</text>
+<text x="1950" y="436.7" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">(0.2)</text>
+<path d="M2012,415.0 L2070,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="2110" y="345.0" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Output</text>
+<ellipse cx="2110" cy="400.0" rx="32" ry="22" fill="none" stroke="#1f2a3a" stroke-width="3"/>
+<ellipse cx="2110" cy="457.0" rx="32" ry="22" fill="none" stroke="#1f2a3a" stroke-width="3"/>
+<text x="2110" y="515.0" text-anchor="middle" font-size="24" fill="#6b7280">Softmax (2)</text>
+<g transform="translate(446,0)"><rect x="0" y="700" width="30" height="30" rx="5" fill="#fde4bb" stroke="#f0a020" stroke-width="3"/>
+<text x="40" y="723" font-size="26" fill="#1f2937">Conv1D Layers</text>
+<rect x="284.28000000000003" y="700" width="30" height="30" rx="5" fill="#c5f0e8" stroke="#14b8a6" stroke-width="3"/>
+<text x="324.28000000000003" y="723" font-size="26" fill="#1f2937">Global Avg Pooling</text>
+<rect x="641.3600000000001" y="700" width="30" height="30" rx="5" fill="#eeddfd" stroke="#a855f7" stroke-width="3"/>
+<text x="681.3600000000001" y="723" font-size="26" fill="#1f2937">Layer Normalization</text>
+<rect x="1013.0000000000002" y="700" width="30" height="30" rx="5" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="1053.0000000000002" y="723" font-size="26" fill="#1f2937">Dropout</text>
+<rect x="1209.9200000000003" y="700" width="30" height="30" rx="5" fill="#cfe0fb" stroke="#3b82f6" stroke-width="3"/>
+<text x="1249.9200000000003" y="723" font-size="26" fill="#1f2937">Input</text></g>
+</svg>

@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 2140" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#9aa0a6"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="2140" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="500" y="52" text-anchor="middle" font-size="34" font-weight="700" fill="#111827">DrDoS Detection Research Pipeline</text>
+
+  <!-- ================= DATA PREP (green) ================= -->
+  <!-- Node 1 -->
+  <rect x="230" y="90" width="540" height="90" rx="14" fill="#e7f8ee" stroke="#1e9e57" stroke-width="2.5"/>
+  <text x="500" y="128" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">CIC-DDoS 2019 Dataset</text>
+  <text x="500" y="158" text-anchor="middle" font-size="17" fill="#4b5563">DrDoS_DNS subset  ·  3,402 benign / 5.07M attack</text>
+
+  <path d="M500,180 L500,205" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node 2 -->
+  <rect x="230" y="212" width="540" height="90" rx="14" fill="#e7f8ee" stroke="#1e9e57" stroke-width="2.5"/>
+  <text x="500" y="250" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Combine BENIGN Data</text>
+  <text x="500" y="280" text-anchor="middle" font-size="17" fill="#4b5563">merge all benign packets  →  113,828 benign</text>
+
+  <path d="M500,302 L500,327" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node 3 -->
+  <rect x="230" y="334" width="540" height="90" rx="14" fill="#e7f8ee" stroke="#1e9e57" stroke-width="2.5"/>
+  <text x="500" y="372" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Downsampling (1:2)</text>
+  <text x="500" y="402" text-anchor="middle" font-size="17" fill="#4b5563">balanced set: 341,484  (113,828 benign / 227,656 attack)</text>
+
+  <path d="M500,424 L500,449" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node 4 -->
+  <rect x="230" y="456" width="540" height="90" rx="14" fill="#e7f8ee" stroke="#1e9e57" stroke-width="2.5"/>
+  <text x="500" y="494" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Data Preprocessing</text>
+  <text x="500" y="524" text-anchor="middle" font-size="17" fill="#4b5563">drop ID &amp; 12 constant cols  ·  impute inf/NaN  ·  Min-Max scale</text>
+
+  <path d="M500,546 L500,571" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ================= DATA PIPELINE (blue) ================= -->
+  <!-- Split node -->
+  <rect x="230" y="578" width="540" height="90" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="500" y="616" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Initial Train-Test Split (80/20)</text>
+  <text x="500" y="646" text-anchor="middle" font-size="17" fill="#4b5563">train 273,187  ·  test hold-out 68,297</text>
+
+  <path d="M500,668 L500,693" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Final Data Pipeline container -->
+  <rect x="200" y="700" width="600" height="500" rx="16" fill="#eef4ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="500" y="742" text-anchor="middle" font-size="24" font-weight="700" fill="#2563eb">Final Data Pipeline</text>
+
+  <!-- sub 1 -->
+  <rect x="238" y="762" width="524" height="86" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="500" y="798" text-anchor="middle" font-size="21" font-weight="700" fill="#111827">1. Feature Selection</text>
+  <text x="500" y="826" text-anchor="middle" font-size="16" fill="#4b5563">SelectKBest  ·  Top-5 / Top-10 / Top-15 (Mutual Info)</text>
+
+  <!-- sub 2 -->
+  <rect x="238" y="860" width="524" height="86" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="500" y="896" text-anchor="middle" font-size="21" font-weight="700" fill="#111827">2. MinMax Scaling</text>
+  <text x="500" y="924" text-anchor="middle" font-size="16" fill="#4b5563">fit on train  →  apply to test  (no leakage)</text>
+
+  <!-- sub 3 -->
+  <rect x="238" y="958" width="524" height="86" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="500" y="994" text-anchor="middle" font-size="21" font-weight="700" fill="#111827">3. Training Split (75/25)</text>
+  <text x="500" y="1022" text-anchor="middle" font-size="16" fill="#4b5563">train 75%  →  val 25%  (early stopping)</text>
+
+  <!-- sub 4 -->
+  <rect x="238" y="1056" width="524" height="86" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="500" y="1092" text-anchor="middle" font-size="21" font-weight="700" fill="#111827">4. Final Datasets Ready</text>
+  <text x="500" y="1120" text-anchor="middle" font-size="16" fill="#4b5563">train 205k  ·  val 68k  ·  test 68k (hold-out)</text>
+
+  <path d="M500,1200 L500,1225" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ================= TRAINING (orange) ================= -->
+  <rect x="200" y="1232" width="600" height="270" rx="16" fill="#fff2d6" stroke="#e07b0a" stroke-width="2.5"/>
+  <text x="500" y="1274" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Model Training (Keras)</text>
+
+  <!-- MLP -->
+  <rect x="228" y="1296" width="172" height="130" rx="12" fill="#ffffff" stroke="#e07b0a" stroke-width="2"/>
+  <text x="314" y="1334" text-anchor="middle" font-size="22" font-weight="700" fill="#e07b0a">MLP</text>
+  <text x="314" y="1376" text-anchor="middle" font-size="14.5" fill="#4b5563">Dense 256 → 128</text>
+  <text x="314" y="1396" text-anchor="middle" font-size="14.5" fill="#4b5563">→ 64</text>
+
+  <!-- CNN -->
+  <rect x="414" y="1296" width="172" height="130" rx="12" fill="#ffffff" stroke="#e07b0a" stroke-width="2"/>
+  <text x="500" y="1334" text-anchor="middle" font-size="22" font-weight="700" fill="#e07b0a">CNN</text>
+  <text x="500" y="1372" text-anchor="middle" font-size="14.5" fill="#4b5563">Conv1D 64 → 128 → 64</text>
+  <text x="500" y="1394" text-anchor="middle" font-size="14.5" fill="#4b5563">+ GlobalAvgPool</text>
+
+  <!-- GRU -->
+  <rect x="600" y="1296" width="172" height="130" rx="12" fill="#ffffff" stroke="#e07b0a" stroke-width="2"/>
+  <text x="686" y="1334" text-anchor="middle" font-size="22" font-weight="700" fill="#e07b0a">GRU</text>
+  <text x="686" y="1384" text-anchor="middle" font-size="14.5" fill="#4b5563">GRU 64 → 64</text>
+
+  <text x="500" y="1466" text-anchor="middle" font-size="16" fill="#4b5563">Early Stopping  ·  ReduceLROnPlateau  ·  ModelCheckpoint  ·  max 20 epochs</text>
+
+  <path d="M500,1502 L500,1527" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Evaluation node (orange) -->
+  <rect x="230" y="1534" width="540" height="94" rx="14" fill="#fff2d6" stroke="#e07b0a" stroke-width="2.5"/>
+  <text x="500" y="1574" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Evaluation  (Test = 68,297)</text>
+  <text x="500" y="1604" text-anchor="middle" font-size="16" fill="#4b5563">Accuracy · Precision · Recall · F1-Score · AUC-ROC · Confusion Matrix</text>
+
+  <path d="M500,1628 L500,1653" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ================= ONNX EXPORT (purple) ================= -->
+  <rect x="200" y="1660" width="600" height="220" rx="16" fill="#ece9fd" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="500" y="1702" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">ONNX Export &amp; Quantization (tf2onnx)</text>
+  <text x="500" y="1730" text-anchor="middle" font-size="16" fill="#4b5563">per model:  MLP · CNN · GRU</text>
+
+  <rect x="238" y="1748" width="252" height="66" rx="12" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="364" y="1788" text-anchor="middle" font-size="19" font-weight="700" fill="#6d28d9">Dynamic Quant (INT8)</text>
+
+  <rect x="510" y="1748" width="252" height="66" rx="12" fill="#ffffff" stroke="#6d28d9" stroke-width="2"/>
+  <text x="636" y="1788" text-anchor="middle" font-size="19" font-weight="700" fill="#6d28d9">Static Quant (INT8)</text>
+
+  <text x="500" y="1850" text-anchor="middle" font-size="15.5" font-style="italic" fill="#4b5563">note: CNN uses static quant only (ConvInteger has no CUDA kernel)</text>
+
+  <path d="M500,1880 L500,1905" stroke="#9aa0a6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ================= BENCHMARK (red) ================= -->
+  <rect x="230" y="1912" width="540" height="94" rx="14" fill="#fde8e8" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="500" y="1952" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Benchmark — Keras vs ONNX Runtime</text>
+  <text x="500" y="1982" text-anchor="middle" font-size="16" fill="#4b5563">CPU vs GPU · Latency · Throughput · Model Size · 30-Run Variance</text>
+
+  <!-- ================= LEGEND ================= -->
+  <g font-size="17" fill="#374151">
+    <rect x="118" y="2058" width="26" height="18" rx="4" fill="#e7f8ee" stroke="#1e9e57" stroke-width="2"/>
+    <text x="152" y="2072">Data Prep</text>
+
+    <rect x="272" y="2058" width="26" height="18" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="306" y="2072">Data Pipeline</text>
+
+    <rect x="452" y="2058" width="26" height="18" rx="4" fill="#fff2d6" stroke="#e07b0a" stroke-width="2"/>
+    <text x="486" y="2072">Training</text>
+
+    <rect x="586" y="2058" width="26" height="18" rx="4" fill="#ece9fd" stroke="#6d28d9" stroke-width="2"/>
+    <text x="620" y="2072">ONNX Export</text>
+
+    <rect x="758" y="2058" width="26" height="18" rx="4" fill="#fde8e8" stroke="#dc2626" stroke-width="2"/>
+    <text x="792" y="2072">Benchmark</text>
+  </g>
+</svg>
