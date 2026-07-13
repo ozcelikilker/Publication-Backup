@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 770" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif">
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa0a6"/></marker></defs>
+<rect x="0" y="0" width="1720" height="770" fill="#ffffff"/>
+<text x="860.0" y="72" text-anchor="middle" font-size="46" font-weight="800" fill="#1f2a3a">Custom MLP Architecture</text>
+<rect x="55" y="130" width="1610" height="500" rx="26" fill="#f0f0f0"/>
+
+<text x="160" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Input Layer</text>
+<rect x="115.0" y="250" width="90" height="330" rx="10" fill="#cfe0fb" stroke="#3b82f6" stroke-width="3"/>
+<line x1="125" y1="297" x2="195" y2="297" stroke="#a9cdf0" stroke-width="2"/>
+<line x1="125" y1="344" x2="195" y2="344" stroke="#a9cdf0" stroke-width="2"/>
+<line x1="125" y1="391" x2="195" y2="391" stroke="#a9cdf0" stroke-width="2"/>
+<line x1="125" y1="439" x2="195" y2="439" stroke="#a9cdf0" stroke-width="2"/>
+<line x1="125" y1="486" x2="195" y2="486" stroke="#a9cdf0" stroke-width="2"/>
+<line x1="125" y1="533" x2="195" y2="533" stroke="#a9cdf0" stroke-width="2"/>
+<text x="160" y="620" text-anchor="middle" font-size="24" fill="#6b7280">Input Dim</text>
+<path d="M210,415.0 L310,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="360" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Dense(256)</text>
+<rect x="315.0" y="250" width="90" height="330" rx="10" fill="#fde4bb" stroke="#f0a020" stroke-width="3"/>
+<circle cx="360" cy="291.2" r="7" fill="#e8900f"/>
+<circle cx="360" cy="332.5" r="7" fill="#e8900f"/>
+<circle cx="360" cy="373.8" r="7" fill="#e8900f"/>
+<circle cx="360" cy="415.0" r="7" fill="#e8900f"/>
+<circle cx="360" cy="456.2" r="7" fill="#e8900f"/>
+<circle cx="360" cy="497.5" r="7" fill="#e8900f"/>
+<circle cx="360" cy="538.8" r="7" fill="#e8900f"/>
+<text x="360" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU</text>
+<path d="M410,415.0 L475,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="485.0" y="260.0" width="150" height="90" rx="12" fill="#eeddfd" stroke="#a855f7" stroke-width="3"/>
+<text x="560" y="313.4" text-anchor="middle" font-size="24" font-weight="700" fill="#8b3ce0">LayerNorm</text>
+<rect x="485.0" y="390.0" width="150" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="560" y="443.1" text-anchor="middle" font-size="23" font-weight="700" fill="#dc2626">Dropout (0.3)</text>
+<path d="M645,415.0 L730,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="780" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Dense(128)</text>
+<rect x="735.0" y="250" width="90" height="330" rx="10" fill="#c9efcf" stroke="#22b455" stroke-width="3"/>
+<circle cx="780" cy="297.1" r="7" fill="#16a34a"/>
+<circle cx="780" cy="344.3" r="7" fill="#16a34a"/>
+<circle cx="780" cy="391.4" r="7" fill="#16a34a"/>
+<circle cx="780" cy="438.6" r="7" fill="#16a34a"/>
+<circle cx="780" cy="485.7" r="7" fill="#16a34a"/>
+<circle cx="780" cy="532.9" r="7" fill="#16a34a"/>
+<text x="780" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU</text>
+<path d="M830,415.0 L915,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="925.0" y="260.0" width="150" height="90" rx="12" fill="#eeddfd" stroke="#a855f7" stroke-width="3"/>
+<text x="1000" y="313.4" text-anchor="middle" font-size="24" font-weight="700" fill="#8b3ce0">LayerNorm</text>
+<rect x="925.0" y="390.0" width="150" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="1000" y="443.1" text-anchor="middle" font-size="23" font-weight="700" fill="#dc2626">Dropout (0.3)</text>
+<path d="M1085,415.0 L1150,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="1200" y="218" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Dense(64)</text>
+<rect x="1155.0" y="250" width="90" height="330" rx="10" fill="#fbd6e4" stroke="#ec4899" stroke-width="3"/>
+<circle cx="1200" cy="332.5" r="7" fill="#db2777"/>
+<circle cx="1200" cy="415.0" r="7" fill="#db2777"/>
+<circle cx="1200" cy="497.5" r="7" fill="#db2777"/>
+<text x="1200" y="620" text-anchor="middle" font-size="24" fill="#6b7280">ReLU</text>
+<path d="M1250,415.0 L1330,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="1335.0" y="370.0" width="130" height="90" rx="12" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="1400" y="408.6" text-anchor="middle" font-size="23" font-weight="700" fill="#dc2626">Dropout</text>
+<text x="1400" y="437.6" text-anchor="middle" font-size="23" font-weight="700" fill="#dc2626">(0.2)</text>
+<path d="M1470,415.0 L1515,415.0" stroke="#9aa0a6" stroke-width="4" marker-end="url(#ar)"/>
+<text x="1560" y="345.0" text-anchor="middle" font-size="27" font-weight="700" fill="#1f2a3a">Output</text>
+<ellipse cx="1560" cy="400.0" rx="32" ry="20" fill="none" stroke="#6b7280" stroke-width="3"/>
+<ellipse cx="1560" cy="455.0" rx="32" ry="20" fill="none" stroke="#6b7280" stroke-width="3"/>
+<text x="1560" y="510.0" text-anchor="middle" font-size="24" fill="#6b7280">Softmax (2)</text>
+<g transform="translate(357,0)"><rect x="0" y="700" width="30" height="30" rx="5" fill="#fde4bb" stroke="#f0a020" stroke-width="3"/>
+<text x="40" y="723" font-size="26" fill="#1f2937">Dense Layers</text>
+<rect x="269.72" y="700" width="30" height="30" rx="5" fill="#eeddfd" stroke="#a855f7" stroke-width="3"/>
+<text x="309.72" y="723" font-size="26" fill="#1f2937">Layer Normalization</text>
+<rect x="641.3600000000001" y="700" width="30" height="30" rx="5" fill="#fbdada" stroke="#ef4444" stroke-width="3"/>
+<text x="681.3600000000001" y="723" font-size="26" fill="#1f2937">Dropout</text>
+<rect x="838.2800000000002" y="700" width="30" height="30" rx="5" fill="#cfe0fb" stroke="#3b82f6" stroke-width="3"/>
+<text x="878.2800000000002" y="723" font-size="26" fill="#1f2937">Input</text></g>
+</svg>
