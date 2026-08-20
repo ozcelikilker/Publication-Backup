@@ -1,0 +1,119 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="JGSas5UPG81gfnSpxvTQ">
+    <mxGraphModel dx="1364" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="880" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sec_reg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EEF3;strokeColor=none;align=left;spacingLeft=18;fontColor=#2D4059;fontSize=25;fontFamily=Helvetica;" value="&lt;i&gt;&lt;b&gt;Registration&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="48" width="820" x="30" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sec_ver" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EEF3;strokeColor=none;align=left;spacingLeft=18;fontColor=#2D4059;fontSize=25;fontFamily=Helvetica;" value="&lt;i&gt;&lt;b&gt;Verification&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="48" width="820" x="30" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_a1" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeWidth=1.5;strokeColor=#94A3B8;dashPattern=5 5;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="140" y="1150" as="sourcePoint" />
+            <mxPoint x="140" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_aim" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeWidth=1.5;strokeColor=#94A3B8;dashPattern=5 5;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="1150" as="sourcePoint" />
+            <mxPoint x="440" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_a2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeWidth=1.5;strokeColor=#94A3B8;dashPattern=5 5;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="740" y="1150" as="sourcePoint" />
+            <mxPoint x="740" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box_a1" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#EBF2FA;strokeColor=#1565C0;strokeWidth=2;fontSize=26;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;Agent 1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="35" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="box_aim" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#EBF2FA;strokeColor=#1565C0;strokeWidth=2;fontSize=26;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;AIM Server&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="335" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="box_a2" parent="1" style="rounded=1;arcSize=25;whiteSpace=wrap;html=1;fillColor=#EBF2FA;strokeColor=#1565C0;strokeWidth=2;fontSize=26;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;Agent 2&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="635" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_1" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;1. REGISTER&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="140" y="190" as="sourcePoint" />
+            <mxPoint x="440" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brk_1" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=0;flipH=1;strokeColor=#2C3E50;strokeWidth=1.8;" value="" vertex="1">
+          <mxGeometry height="52" width="16" x="440" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_brk1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#2D4059;fontSize=23;" value="&lt;i&gt;&lt;b&gt;register + update filters&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="52" width="310" x="466" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_2" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;2. Credentials &amp;amp; config&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="315" as="sourcePoint" />
+            <mxPoint x="140" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_3" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;3. SYNC (filter copy)&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="405" as="sourcePoint" />
+            <mxPoint x="740" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_4" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;4. Signed request (id || pk || sig)&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="140" y="575" as="sourcePoint" />
+            <mxPoint x="740" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brk_2" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=0;flipH=1;strokeColor=#2C3E50;strokeWidth=1.8;" value="" vertex="1">
+          <mxGeometry height="52" width="16" x="726" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_brk2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#2D4059;fontSize=23;" value="&lt;i&gt;&lt;b&gt;verify signature under pk&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="52" width="470" x="240" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="brk_3" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=0;flipH=1;strokeColor=#2C3E50;strokeWidth=1.8;" value="" vertex="1">
+          <mxGeometry height="52" width="16" x="726" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_brk3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#2D4059;fontSize=23;" value="&lt;i&gt;&lt;b&gt;check H(id || pk) in k filters&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="52" width="500" x="210" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_opt" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=380;height=36;strokeColor=#708090;strokeWidth=1.8;fillColor=#F8FAFC;fontColor=#2D4059;fontSize=22;align=left;spacingLeft=10;" value="&lt;b&gt;opt&lt;/b&gt; [Fallback (critical operations)]" vertex="1">
+          <mxGeometry height="260" width="480" x="330" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_5" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;5. VERIFY&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="740" y="835" as="sourcePoint" />
+            <mxPoint x="440" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brk_4" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=0;flipH=1;strokeColor=#2C3E50;strokeWidth=1.8;" value="" vertex="1">
+          <mxGeometry height="52" width="16" x="440" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_brk4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#2D4059;fontSize=23;" value="&lt;i&gt;&lt;b&gt;query Agent Registry&lt;/b&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="52" width="310" x="466" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_6" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;6. Result&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="960" as="sourcePoint" />
+            <mxPoint x="740" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_7" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=2.5;strokeColor=#2C3E50;fillColor=#2C3E50;fontColor=#000000;fontSize=24;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;b&gt;7. RESPONSE&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="0.0256" y="8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="740" y="1080" as="sourcePoint" />
+            <mxPoint x="140" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
